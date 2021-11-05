@@ -29,3 +29,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+#Added this because instructions in iteration 4 said don't forget to
+/coverage/
