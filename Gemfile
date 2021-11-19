@@ -68,7 +68,7 @@ group :test do
   gem 'chromedriver-helper'
   # coverage report
   gem 'simplecov', require: false
-
+  gem 'factory_bot_rails'
 
 end
 
