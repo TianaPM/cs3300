@@ -2,6 +2,16 @@
 
 <h1>Projects</h1>
 
+<% if student_signed_in? %>
+    <li><%= link_to "Logout", destroy_student_session_path, method: :delete %></li>
+    <li><%= link_to current_student.email, edit_student_registration_path %></li>
+    
+<% else %>
+    <li><%= link_to "Sign Up", new_student_registration_path %></li>
+    <li><%= link_to "Login", new_student_session_path %></li>
+<% end %>
+
+
 <table>
   <thead>
     <tr>
